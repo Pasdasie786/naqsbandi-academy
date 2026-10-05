@@ -31,6 +31,28 @@ section{padding:80px 18px}.container{max-width:1100px;margin:auto}
 .icon{font-size:45px}.card h3{color:#d4af37;font-size:21px;margin:8px 0}.card p{color:#bbb}
 .features .grid{grid-template-columns:repeat(3,1fr)}
 .feature{text-align:center;padding:20px}.feature strong{display:block;color:#d4af37;font-size:21px}
+
+.portfolio{background:#080808}
+.portfolio-note{text-align:center;color:#aaa;margin:-18px auto 30px;max-width:760px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.portfolio-card{
+  background:linear-gradient(145deg,#171717,#090909);
+  border:1px solid #6f5c20;border-radius:18px;overflow:hidden;
+  transition:.3s;box-shadow:0 12px 30px #0008
+}
+.portfolio-card:hover{transform:translateY(-6px);border-color:#d4af37}
+.portfolio-placeholder{
+  min-height:210px;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:25px;
+  background:radial-gradient(circle,#3a2d0835,transparent 65%),#111;
+  color:#d4af37;font-size:24px;font-weight:bold
+}
+.portfolio-card .caption{padding:16px;text-align:center}
+.portfolio-card .caption strong{display:block;color:#d4af37;font-size:20px}
+.portfolio-card .caption span{display:block;color:#aaa;font-size:14px;margin-top:4px}
+@media(max-width:800px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.portfolio-grid{grid-template-columns:1fr}}
+
 .contact{text-align:center;background:radial-gradient(circle,#3a2d0820,transparent 55%),#050505}
 .contact-item{max-width:700px;margin:12px auto;background:#101010;border:1px solid #6f5c20;border-radius:14px;padding:14px}
 .contact-item strong{display:block;color:#d4af37;font-size:20px}.contact-item a{color:#fff}
@@ -43,7 +65,7 @@ footer h3{color:#d4af37}
 </head>
 <body>
 <nav><div class="nav"><div class="logo">نقشبندی اکیڈمی</div><div>
-<a href="#home">ہوم</a><a href="#about">ہمارے بارے میں</a><a href="#services">خدمات</a><a href="#contact">رابطہ</a>
+<a href="#home">ہوم</a><a href="#about">ہمارے بارے میں</a><a href="#services">خدمات</a><a href="#portfolio">گैलری</a><a href="#contact">رابطہ</a>
 </div></div></nav>
 
 <section class="hero" id="home"><div>
@@ -77,6 +99,52 @@ footer h3{color:#d4af37}
 <div class="feature"><strong>Creative Ideas</strong><p>آپ کے برانڈ کے لیے منفرد تخلیقی آئیڈیاز</p></div>
 <div class="feature"><strong>High Quality</strong><p>اعلیٰ معیار کے ڈیجیٹل ڈیزائن اور ویڈیوز</p></div>
 </div></div></section>
+
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="title">
+      <h2>ہماری گیلری</h2>
+      <p>Portfolio & Creative Work</p>
+    </div>
+    <p class="portfolio-note">
+      ہمارے منتخب تخلیقی کام اور ڈیزائنز۔ اپنی اصل تصاویر شامل کرنے کے لیے
+      نیچے دی گئی جگہوں پر اپنی تصاویر کے نام لگائیں۔
+    </p>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">🎨<br>اپنا لوگو ڈیزائن یہاں لگائیں</div>
+        <div class="caption"><strong>Logo Design</strong><span>پروفیشنل لوگو ڈیزائن</span></div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">🖼️<br>اپنا پوسٹر یہاں لگائیں</div>
+        <div class="caption"><strong>Poster Design</strong><span>پوسٹر اور اشتہاری ڈیزائن</span></div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">📱<br>اپنا سوشل میڈیا ڈیزائن یہاں لگائیں</div>
+        <div class="caption"><strong>Social Media</strong><span>سوشل میڈیا کریئیٹو ڈیزائن</span></div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">💳<br>اپنا بزنس کارڈ یہاں لگائیں</div>
+        <div class="caption"><strong>Business Card</strong><span>بزنس کارڈ ڈیزائن</span></div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">💌<br>اپنا دعوت نامہ یہاں لگائیں</div>
+        <div class="caption"><strong>Invitation Design</strong><span>دعوت نامہ اور کارڈ ڈیزائن</span></div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-placeholder">🎬<br>اپنی ویڈیو کا تھمب نیل یہاں لگائیں</div>
+        <div class="caption"><strong>Video Creative</strong><span>ویڈیو اور تھمب نیل ڈیزائن</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact"><div class="container">
 <div class="title"><h2>رابطہ کریں</h2><p>اپنے ڈیزائن یا ویڈیو کے لیے آج ہی رابطہ کریں</p></div>
